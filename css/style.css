@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =========================================== #Header Section . ==========================*/
+.header-box .navbar{
+  opacity: 0.7;
+}
+.form-box{
+  width: 200px;
+  height: 300px;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  background-color: #2d09ce;
+  z-index: 13;
+}
+.form-box .form-inp{
+  margin-top: 30px;
+  margin-left: 7px;
+}
+.form-box .form-btn{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.form-box .close{
+  margin-left: 70px;
+  margin-top: 10px;
+}
+@media (max-width:567px ){
+  .navbar .egypt-btn , .header-ul , .log-btn , .header-img{
+    display: none !important;
+  }
+  .home-imgs{
+    margin-top: 200px;
+  }
+  .airlines{
+    display: none !important;
+  }
+  
+}
+/* ========================================== #Cards-Section . ==================================*/
+
+.cards-sec-background{
+  position: relative;
+  background-image: url(../images/aswan.jpg);
+  height:  2700px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cards-sec-background .cards-section{
+  /* width: 100%; */
+  /* height: 650px; */
+  background-color: aliceblue;
+  position: absolute;
+  margin-top: 200px;
+}
+.just-cards{
+  margin-top: 60px;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.just-cards .card{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.city-card::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #0cf0f0;
+}
+.city-card:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: 1.5s;
+}
+.city-card::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0cf0f0;
+}
+.city-card:hover::before{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition: 1.5s;
+}
+/*  ======================================= #Airlines Section . ========================*/
+.air-cards{
+  margin-top: 30px;
+}
+
+.plan-card:hover{
+  animation: plan 2s linear;
+  
+}
+
+@keyframes plan{
+  0%{
+    transform: scale(0.9,0.9);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+.airlines{
+  margin-bottom: 100px;
+}
+.air-cards .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.air-cards .overlay span {
+  color: aliceblue;
+  display: block;
+  padding: 30px;
+  margin-top: 20px;
+}
+.air-cards .overlay p{
+  color: aliceblue;
+  text-align: center;
+}
+.air-cards .card{
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+}
+.air-cards .overlay .flight-img{
+  width: 120px;
+  height: 130;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+
+/* ======================================= #Pod-cards . ====================*/
+.pod-box .pod-img{
+  width: 300px;
+  height: 300px;
+  float: right;
+  position: relative;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+.img1{
+  background-image: url(../images/safiri.png);
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+}
+.img2{
+  
+  background-image: url(../images/adventure.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3{
+  background-image: url(../images/shopping.png);
+  background-size: cover;
+  background-position: center;
+}
+.img4{
+  background-image: url(../images/relax.png);
+  background-size: cover;
+  background-position: center;
+}
+.big-box{
+  position: relative;
+}
+/*============================================================ *5.0 >> #Footer . ========================================================= */
+footer .footer-box2 ,.footer-box3 , .footer-box4{
+margin-left: 70px;
+}
+footer .footer-box2 ul, .footer-box3 ul{
+  list-style: none;
+}
+footer .footer-box2 a, .footer-box3 a{
+text-decoration: none;
+}
+footer a:hover{
+  color: #2d09ce;
+}
+/*================================ #Media query . ======================= */
+@media (max-width:567px ){
+
+}

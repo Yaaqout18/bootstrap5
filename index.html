@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- ================================== #Header-Section . ========================= -->
+    <header>
+      <div class="containar">
+        <div class="header-box row flex-wrap">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+              <img
+                src="images/planlogo.jpg"
+                alt="Logo"
+                style="width: 40px"
+                class="rounded-pill m-1 header-img"
+              />
+            </a>
+            <button class="btn btn-primary egypt-btn" disabled>
+              <span class="spinner-grow spinner-grow-sm"></span>
+              Egypt <i class="fa-solid fa-location-dot"></i>
+            </button>
+            <form class="d-flex col-lg-4">
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+            <ul class="navbar-nav col-lg-6 header-ul">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Explore</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">El Allmean City</a></li>
+                  <li><a class="dropdown-item" href="#">Siwa</a></li>
+                  <li><a class="dropdown-item" href="#">Aswaan</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-success btn-color log-btn"
+              id="loginbtn"
+            >
+              Login <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+      <div class="form-box" style="display: none" id="login-form">
+        <form>
+          <button id="close" class="close">close</button>
+          <input type="text" placeholder="Enter your name" class="form-inp" />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="form-inp"
+          />
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            class="form-inp"
+          />
+          <button type="submit" class="form-btn">Login</button>
+        </form>
+      </div>
+    </header>
+    <!-- =========================================== #End of Header. ===========================  -->
+    <section>
+      <div class="containar">
+        <div class="home row flex-wrap home-imgs">
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/home1.jpg"
+                  alt="Los Angeles"
+                  class="d-block w-100"
+                />
+                <div class="carousel-caption">
+                  <h3>Cairo</h3>
+                  <p>Habiby come to Egypt...!!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/home2.jpg"
+                  alt="Chicago"
+                  class="d-block w-100"
+                />
+                <div class="carousel-caption">
+                  <h3>Aswan</h3>
+                  <p>Habiby come to Egypt...!!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/home3.jpg"
+                  alt="New York"
+                  class="d-block w-100"
+                />
+                <div class="carousel-caption">
+                  <h3>Giza</h3>
+                  <p>Habiby come to Egypt...!!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================================== #first-Section . ============================ -->
+    <section>
+      <div class="contanier">
+        <div class="drop-box row flex-wrap">
+          <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Top 5 destinations in Egypt</h1>
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light bg-secondary p-2"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >El Alamean City</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item col" href="#"
+                      >El Alamean city Lorem ipsum <br />dolor sitonsectetur
+                      adipisicing <br />elit. Consequatur pariatur <br />
+                      quis labore provident modi <br />beatae iure unde id
+                      dolores <br />
+                      sapiente excepturi</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light bg-secondary p-2"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Cairo</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Cairo Lorem adipisicing <br />elit. Consequlabore
+                      <br />beatae iureid dolores excepturi,<br />
+                      totam facere, m hic?</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light bg-secondary p-2"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Giza</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Giza Lorem ipsum dolor icing <br />elitum labore
+                      provident modi <br />beatae iurd dolore excepturi,<br />
+                      totam facere, minusi hic?</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light bg-secondary p-2"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Luxor</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Luxor Lorem ipipisicing <br />elit. Consabore provident
+                      modi <br />beataimusores sente excepturi,<br />
+                      totam facere, mipisci hic?</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light bg-secondary p-2"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Aswan</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Aswan Llor sitdipisicing <br />elit. Consre provident
+                      modi <br />bea sapiente excepturi, hic?</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Translate form Arabic to English</h1>
+            <span>Write and Translate</span>
+            <span class="text-secondary">Press Here</span>
+            <div class="container mt-3">
+              <button type="button" class="btn btn-success" id="toastbtn">
+                Copy
+              </button>
+
+              <div class="toast">
+                <div class="toast-header">
+                  <strong class="me-auto">Text is copied</strong>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                  ></button>
+                </div>
+                <div class="toast-body">
+                  <p class="text-dark">Sucessfuly</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 mt-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                name="text"
+                placeholder="Translate:"
+              ></textarea>
+            </div>
+          </div>
+          <hr />
+          <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Translate form Arabic to Frensh</h1>
+            <span>Write and Translate</span>
+            <span class="text-secondary">Press Here</span>
+            <div class="container mt-3">
+              <button type="button" class="btn btn-success" id="toastbtn">
+                Copy
+              </button>
+
+              <div class="toast">
+                <div class="toast-header">
+                  <strong class="me-auto">Text is copied</strong>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                  ></button>
+                </div>
+                <div class="toast-body">
+                  <p class="text-dark">Sucessfuly</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 mt-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                name="text"
+                placeholder="Translate:"
+              ></textarea>
+            </div>
+          </div>
+          <hr />
+          <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1>Translate form Arabic to German</h1>
+            <span>Write and Translate</span>
+            <span class="text-secondary">Press Here</span>
+            <div class="container mt-3">
+              <button type="button" class="btn btn-success" id="toastbtn">
+                Copy
+              </button>
+
+              <div class="toast">
+                <div class="toast-header">
+                  <strong class="me-auto">Text is copied</strong>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                  ></button>
+                </div>
+                <div class="toast-body">
+                  <p class="text-dark">Sucessfuly</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 mt-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                id="comment"
+                name="text"
+                placeholder="Translate:"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- ================================================ #Second-Section . ========================= -->
+    <section>
+      <div class="containar">
+        <div class="cards-sec-background row flex-wrap">
+          <div class="cards-section">
+            <div
+              class="mt-4 p-2 bg-primary text-white text-center rounded col-sm-12"
+            >
+              <h1>Popular destinations in Egypt</h1>
+            </div>
+            <div
+              class="just-cards d-flex justify-content-around flex-wrap col-sm-12"
+            >
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/cairo-nil.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Cairo</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/ali-mosq.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Mo.Ali Mosque</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/ali-mosq.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Mo.Ali Mosque</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/lux-temp.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Luxor temple</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/giza-nile.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Aswan</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/lux-temp2.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Luxor Timple</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/alex.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Alexandria</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/asw-nile.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Fayoum</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+              <div class="card city-card col-sm-12" style="width: 400px">
+                <img
+                  class="card-img-top p-3"
+                  src="images/sharm.jpg"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">Sharm El-Shakh</h4>
+                  <p class="card-text">Visit it and Explore .</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================== #Airlines Section. ==================== -->
+    <hr />
+    <section>
+      <div class="containar">
+        <div class="airlines row flex-wrap">
+          <div
+            class="mt-4 p-2 bg-primary text-white rounded text-center col-sm-12"
+          >
+            <h1>Sponsored By Arabic-Airlines .</h1>
+            <p>30% Discount on all Flights...!!</p>
+          </div>
+          <div
+            class="air-cards d-flex justify-content-around flex-wrap col-sm-12"
+          >
+            <div class="card plan-card col-sm-12" style="width: 400px">
+              <div class="overlay">
+                <span>Up To 30% Discount On Emirates Airlines...!!</span>
+                <p>
+                  <i class="fa-regular fa-clock"></i> What are you waiting for,
+                  book your trip now...!!
+                </p>
+                <img src="images/emiratesair.png" class="flight-img" />
+              </div>
+              <img
+                class="card-img-top"
+                src="images/emiratesair.png"
+                alt="Card image"
+              />
+            </div>
+            <div class="card plan-card col-sm-12" style="width: 400px">
+              <div class="overlay">
+                <span>Up To 30% Discount On Egypt Airlines...!!</span>
+                <p>
+                  <i class="fa-regular fa-clock"></i> What are you waiting for,
+                  book your trip now...!!
+                </p>
+                <img src="images/egyptair.png" class="flight-img" />
+              </div>
+              <img
+                class="card-img-top"
+                src="images/egyptair.png"
+                alt="Card image"
+              />
+            </div>
+            <div class="card plan-card col-sm-12" style="width: 400px">
+              <div class="overlay">
+                <span>Up To 30% Discount On Saudi Airlines...!!</span>
+                <p>
+                  <i class="fa-regular fa-clock"></i> What are you waiting for,
+                  book your trip now...!!
+                </p>
+                <img src="images/saudiaair.png" class="flight-img" />
+              </div>
+              <img
+                class="card-img-top"
+                src="images/saudiaair.png"
+                alt="Card image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- ==================================== #Sorts Section. ==================== -->
+    <section>
+      <div class="container">
+        <div class="pod-box row flex-wrap">
+          <div
+            class="mt-4 p-5 bg-primary text-white rounded pod-box1 col-sm-12 big-box"
+          >
+            <h1>Safari</h1>
+            <p>
+              Safari Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Possimus, cum sed incidunt deserunt accusantium <br />
+              quia ad blanditiis maxime officia laudantium, odio consectetur
+              praesentium <br />
+              repellendus perspiciatis illo, nobis nemo consequatur doloribus!
+            </p>
+            <button type="button" class="btn btn-secondary">Read</button>
+            <button type="button" class="btn btn-success">Explore</button>
+            <button type="button" class="btn btn-info">Visit</button>
+            <div class="pod-img img1 d-flex"></div>
+          </div>
+          <div
+            class="mt-4 p-5 bg-primary text-white rounded pod-box2 col-sm-12 big-box"
+          >
+            <h1>Adventure</h1>
+            <p>
+              Adventure Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Delectus, <br />
+              consectetur iste dicta nobis, similique qui maiores vitae
+              mollitia, rem ad facilis fugit! Qui placeat alias, <br />
+              accusamus in aliquid ab vero.
+            </p>
+            <button type="button" class="btn btn-secondary">Read</button>
+            <button type="button" class="btn btn-success">Explore</button>
+            <button type="button" class="btn btn-info">Visit</button>
+            <div class="pod-img img2 d-flex"></div>
+          </div>
+          <div
+            class="mt-4 p-5 bg-primary text-white rounded pod-box3 col-sm-12 big-box"
+          >
+            <h1>Shopping</h1>
+            <p>
+              Shopping Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quisquam sapiente sunt non <br />
+              vel esse natus commodi numquam nemo alias obcaecati similique quas
+              voluptate <br />
+              inventore, odio dolorum, amet consequatur doloremque magnam!
+            </p>
+            <button type="button" class="btn btn-secondary">Read</button>
+            <button type="button" class="btn btn-success">Explore</button>
+            <button type="button" class="btn btn-info">Visit</button>
+            <div class="pod-img img3 d-flex"></div>
+          </div>
+          <div
+            class="mt-4 p-5 bg-primary text-white rounded pod-box4 col-sm-12 big-box"
+          >
+            <h1>Relaxing</h1>
+            <p>
+              Relaxing Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quasi molestiae voluptatibus <br />
+              impedit, odit nemo earum pariatur libero dignissimos, eaque sint
+              ad voluptates
+              <br />
+              tempore sunt voluptas quibusdam veritatis. Et, vitae iure?
+            </p>
+            <button type="button" class="btn btn-secondary">Read</button>
+            <button type="button" class="btn btn-success">Explore</button>
+            <button type="button" class="btn btn-info">Visit</button>
+            <div class="pod-img img4 d-flex"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!--=============================================================== #Footer Section .======================================================= -->
+    <footer>
+      <div class="container">
+        <div class="footer-box d-flex flex-wrap">
+          <div class="footer-box1">
+            <h4>Who we are?</h4>
+            <p>
+              Traviling website Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Odit ut, porro cumque <br />
+              vero corrupti sint.
+            </p>
+          </div>
+          <div class="footer-box2">
+            <h4>About us..!!</h4>
+            <ul>
+              <li><a href="#">Company .</a></li>
+              <li><a href="#">Team .</a></li>
+              <li><a href="#">Location .</a></li>
+            </ul>
+          </div>
+          <div class="footer-box3">
+            <h4>Social Media..!?</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-box4">
+            <h4>Contact us..!!</h4>
+            <p>
+              You will find Lorem ipsum dolor sit, amet consectetur <br />
+              Aliquam magnam quos in iusto nostrum <br />
+              necessitatibus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("toastbtn").onclick = function () {
+        var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+        var toastList = toastElList.map(function (toastEl) {
+          return new bootstrap.Toast(toastEl);
+        });
+        toastList.forEach((toast) => toast.show());
+      };
+      document.getElementById("toastbtn").onclick = function () {
+        var toastElList = [].slice.call(document.querySelectorAll(".toast"));
+        var toastList = toastElList.map(function (toastEl) {
+          return new bootstrap.Toast(toastEl);
+        });
+        toastList.forEach((toast) => toast.show());
+      };
+      var logForm = document.getElementById("login-form");
+      var logBtn = document.getElementById("loginbtn");
+      logBtn.onclick = function () {
+        logForm.style.display = "block";
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
